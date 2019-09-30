@@ -1,3 +1,6 @@
+package org.eclipse.wb.swt;
+import java.util.*;
+
 public class Server {
 	//variables 
 	public String projectName;
@@ -8,6 +11,9 @@ public class Server {
 	public String url;
 	public int cpuCore; 
 	public int ram;
+	
+	//creating dictionary
+	Dictionary<String,Server> Servers = new Hashtable<String,Server>();
 
 	//getters 
 	public String getProject()
@@ -80,4 +86,5 @@ public class Server {
 	
 	
 }
+
 
